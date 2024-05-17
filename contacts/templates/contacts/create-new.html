@@ -1,0 +1,98 @@
+{% extends "layout.html" %} 
+{% load static %}
+{% load widget_tweaks %}
+
+
+{% block title %}
+    Ayokunle Omotayo - Portfolio
+{% endblock %}
+
+{% block content%}
+<section class="contact-area-2 position-relative pt-lg-100 pt-55 pb-100" style="background-image: url({% static 'images/banner-bg.png' %});">
+<div class="container">
+  <div class="row pt-90">
+    <div class=" col-lg-9 doc_banner_content text-center mx-auto">
+      <h2 class="text-white">Get a touch with <span class="banner-title-h1 mb-2">Contact Us</span></h2>
+        <p>
+            Ayokunlefolio is here to help. Discover our office locations and different ways to contact us so that
+            we can provide you with the support you need.
+        </p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="contact_area sec_pad">
+    <div class="container">
+    <div class="contact_info">
+        <div class="section_title text-start">
+        <h2 class="h_title wow fadeInUp">Let’s start the conversation</h2>
+        <p>Please email us, we’ll happy to assist you.</p>
+        </div>
+        <form action="{% url 'contacts:new-message' %}" method="post" class="contact_form">
+            {% if messages %}
+            <div class="alert alert-{% if message.level == DEFAULT_MESSAGE_LEVELS.SUCESS %}success{% else %}warning{% endif %} alert-dismissible fade show" role="alert">
+                {% for message in messages %}
+                    {{ message }}
+                {% endfor %}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            {% endif %}
+            {% csrf_token %}
+                <style>
+                    div#id_project_type div,div#id_budget_range div,div#id_deadline div{
+                        min-height: inherit;
+                        position: relative;
+                        display: inline-block;
+                        font-size: 16px;
+                        line-height: 16px;
+                        font-weight: 400;
+                        color: #3d3d4e;
+                        margin: 20px 20px 15px;
+                    }
+                </style>
+
+                <div class="form-group">
+                    <h6>What type of project you need?</h6>
+                    <div class="box_info">
+                        {% render_field  form.project_type class+="" %}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <h6>Budget Range</h6>
+                    <div class="box_info">
+                        {% render_field  form.budget_range class+="" %}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <h6>Deadline</h6>
+                    <div class="box_info">
+                        {% render_field  form.deadline class+="" %}
+                    </div>
+                </div>
+                <div class="row contact_fill">
+                    <div class="col-lg-4 form-group">
+                        <h6>Full Name</h6>
+                        {% render_field form.fullname class+="form-control" %}
+                    </div>
+                    <div class="col-lg-4 form-group">
+                        <h6>Email</h6>
+                        {% render_field form.email class+="form-control" %}
+                    </div>
+                    <div class="col-lg-4 form-group">
+                        <h6>Phone no</h6>
+                        {% render_field form.phone class+="form-control" %}
+                    </div>
+                    <div class="col-lg-12 form-group">
+                        <h6>Message</h6>
+                        {% render_field form.message class+="form-control message" %}
+                    </div>
+                    <div class="col-lg-12 form-group">
+                        <button type="submit" class=" theme-btn btn-big">Send Message</button>
+                    </div> 
+                </div>
+        </form>
+    </div>
+    </div>
+</section>
+{% endblock %}

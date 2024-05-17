@@ -1,0 +1,344 @@
+{% extends "layout.html" %} 
+{% load static %}
+
+
+{% block title %}
+    Ayokunle Omotayo - Portfolio
+{% endblock %}
+
+{% block content%}
+    <section class="banner-area banner-area-nine pt-120 banner_animation_01" id="home" data-scroll-section>
+        <a href="#web" class="scroll-down-one position-absolute">
+            <div class="circle"></div>
+            <div class="arrow-cont">
+                <i class="arrow_carrot-down first"></i>
+                <i class="arrow_carrot-down second"></i>
+                <i class="arrow_carrot-down third"></i>
+            </div>
+        </a>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-7 col-lg-7">
+                    <div class="banner-content banner-content-typing">
+                        <small class="wow fadeInUp banner-subtitle">HI there! This is Ayokunle</small>
+                        <h1 class="cd-headline clip home-headline">I’m a
+                            <small class="cd-words-wrapper single-headline">
+                                <span class="is-visible"><b>Web</b> Developer</span>
+                                <span class="is-hidden"><b>Product</b> Owner</span>
+                                <span class="is-hidden"><b>Web</b> Designer</span>
+                            </small>
+                        </h1>
+                        <p class="wow fadeInUp mt-30" data-wow-delay="0.5s">Crafting Seamless Digital Experiences.
+                        </p>
+                        <div class="allfolio-btn-group">
+                            <a href="{% url 'contacts:new-message' %}" class="theme-btn btn-big">Contact Me</a>
+                            <a href="{% static 'resumes/Omotayo_Ayokunle_Resume.pdf' %}" class="theme-btn theme-btn-outline-white btn-big" download="">
+                                Get Resume
+                            </a>
+                        </div>
+                        <div class="header_contact_info">
+                            <div class="item">
+                                <small class="label">Email</small>
+                                <a href="mailto:ayokunle.omotayo01@gmail.com">ayokunle.omotayo01@gmail.com</a>
+                            </div>
+                            <div class="item">
+                                <small class="label">Phone</small>
+                                <a href="tel:2347067139018">+234 706 713 901 8</a>
+                            </div>
+                            <div class="item">
+                                <small class="label">Location</small>
+                                <p>Lagos, Nigeria</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-lg-block">
+                    <div class="banner-img-two">
+                        <div class="shape wow slideInnew" data-wow-delay="0.7s">
+                            <img class="layer" data-depth="-0.15" src="{% static 'images/man.png' %}" alt="">
+                        </div>
+
+                        <div class="btn-circle" id="btn_wrapper">
+                            <a href="https://youtu.be/ae4fbl4bTKI" class="youtube_logo"
+                                data-fancybox>
+                                <i class="fa fa-play" aria-hidden="true"></i>
+                            </a>
+                            <div class="text">
+                                <p>.Know About MY Self. By A Quick Video</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="promo_area" id="web">
+        <div class="marquee">
+            <div class="slide">
+                <h2><img src="{% static 'images/star.png' %}" alt="">Web Developer</h2>
+            </div>
+            <div class="slide">
+                <h2><img src="{% static 'images/star.png' %}" alt="">Web Developer</h2>
+            </div>
+            <div class="slide">
+                <h2><img src="{% static 'images/star.png' %}" alt="">Product Owner</h2>
+            </div>
+            <div class="slide">
+                <h2><img src="{% static 'images/star.png' %}" alt="">Web Designer</h2>
+            </div>
+            <div class="slide">
+                <h2><img src="{% static 'images/star.png' %}" alt="">Web Developer</h2>
+            </div>
+            <div class="slide">
+                <h2><img src="{% static 'images/star.png' %}" alt="">Product Owner</h2>
+            </div>
+            <div class="slide">
+                <h2><img src="{% static 'images/star.png' %}" alt="">Web Designer</h2>
+            </div>
+            <div class="slide">
+                <h2><img src="{% static 'images/star.png' %}" alt="">Web Developer</h2>
+            </div>
+            <div class="slide">
+                <h2><img src="{% static 'images/star.png' %}" alt="">Product Owner</h2>
+            </div>
+            <div class="slide">
+                <h2><img src="{% static 'images/star.png' %}" alt="">Web Designer</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-area-two" data-scroll-section data-scroll-section-id="section3">
+        <div class="container" id="scroll-f">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about_img_box data-scroll data-scroll-sticky" data-scroll-target="#scroll-f">
+                        <img src="{% static 'images/about_img.jpg' %}" alt="about-img">
+                        <div class="social_icon">
+                            <a href="https://www.instagram.com/hypertex_fred/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/omotayo-ayokunle-csm-%C2%AE-136000109/"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/hypertex4"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <div class="section-title-new mb-30">
+                            <span class="subtitle wow fadeInUp">About me</span>
+                            <h2 class="wow fadeInUp">Why hire me</h2>
+                        </div>
+                        <p class="wow fadeInUp">
+                            I am Ayokunle Omotayo, a web developer with a passion for creating immersive digital experiences. 
+                            Over the past 6 years, I have honed my skills in frontend and backend development.
+                        </p>
+                        <p class="wow fadeInUp" data-wow-delay="0.1s">
+                            My journey began with HTML, CSS, and JavaScript, and has since expanded to include 
+                            modern technologies like React, PHP, Node.js, Laravel, and Django. I take pride in building sleek user 
+                            interfaces and robust backend systems with clean, efficient, and scalable code.
+                        </p>
+                        <h3 class="wow fadeInUp" data-wow-delay="0.2s">Expertise Field</h3>
+                        <div class="row">
+                            <div class="col-sm-6 col-md-3">
+                                <div class="skill_item text-center wow fadeInUp">
+                                    <svg class="radial-progress" data-percentage="85" viewBox="0 0 80 80">
+                                        <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                                        <circle class="complete" cx="40" cy="40" r="35"></circle>
+                                        <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">85%</text>
+                                    </svg>
+                                    <h6>User research</h6>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <div class="skill_item text-center wow fadeInUp">
+                                    <svg class="radial-progress" data-percentage="90" viewBox="0 0 80 80">
+                                        <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                                        <circle class="complete" cx="40" cy="40" r="35"></circle>
+                                        <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">90%</text>
+                                    </svg>
+                                    <h6>User Flow</h6>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <div class="skill_item text-center wow fadeInUp">
+                                    <svg class="radial-progress" data-percentage="95" viewBox="0 0 80 80">
+                                        <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                                        <circle class="complete" cx="40" cy="40" r="35"></circle>
+                                        <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">95%</text>
+                                    </svg>
+                                    <h6>Schema Design</h6>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <div class="skill_item text-center wow fadeInUp">
+                                    <svg class="radial-progress" data-percentage="90" viewBox="0 0 80 80">
+                                        <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                                        <circle class="complete" cx="40" cy="40" r="35"></circle>
+                                        <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">90%</text>
+                                    </svg>
+                                    <h6>Coding</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience-area-two">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="section-title-new wow fadeInUp">
+                        <h2 class="title-big">See how I<br> works <svg xmlns="http://www.w3.org/2000/svg" width="69"
+                                height="28" viewBox="0 0 69 28" fill="none">
+                                <path d="M52.45 1L66.6 13.8636L52.45 26.7273" stroke="#E86A42" stroke-width="2"
+                                    stroke-linecap="round" />
+                                <path d="M65 14L1 14" stroke="#E86A42" stroke-width="2" stroke-linecap="round" />
+                            </svg></h2>
+                        <p>Explore our behind-the-scenes processes, talented team, and innovative projects. Gain
+                            insights
+                            into our approach.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row flex-row-reverse">
+                <div class="col-lg-6 mt-minus">
+                    <div class="experience-item wow fadeInUp">
+                        <h3>Research</h3>
+                        <div class="d-flex">
+                            <div class="st-number">Step-1</div>
+                            <p>
+                                The first step is to thoroughly understand the project requirements. This involves discussions with 
+                                clients or stakeholders to gather information about the purpose of the website, its target audience, 
+                                functionality requirements, and any specific design preferences.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="experience-item wow fadeInUp" data-wow-delay="0.1s">
+                        <h3>Schema Design</h3>
+                        <div class="d-flex">
+                            <div class="st-number">Step-2</div>
+                            <p>
+                                For dynamic web applications that require data storage, designing the database schema is a critical step. 
+                                This involves defining the structure of the database tables, relationships between them, and choosing 
+                                appropriate data types.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="experience-item wow fadeInUp" data-wow-delay="0.2s">
+                        <h3>Coding</h3>
+                        <div class="d-flex">
+                            <div class="st-number">Step-3</div>
+                            <p>
+                                <b>Frontend Development:</b> Code for the user interface of the website using languages like HTML, CSS, and JavaScript. <br>
+                                <b>Backend Development:</b> Writing server-side code to handle business logic, data processing, and communication with the database. <br>
+                                <b>Database Implementation:</b> Implementing the database schema designed earlier (SQL queries or using an ORM  framework.) <br>
+                                <b>Testing & Deployment</b> 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+            
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio-area-nine pt-125 pb-125">
+        <div class="container">
+            <div class="section-title-new text-center mb-80">
+                <span class="subtitle wow fadeInUp">Projects</span>
+                <h2 class="wow fadeInUp">I made for clients</h2>
+            </div>
+            <div class="row align-items-center portfolio-item portfolio-widget-3 inverted-widget wow fadeInUp"
+                data-wow-delay="0.1s">
+                <div class="col-md-7">
+                    <a href="https://proddly.com/" class="project-img">
+                        <img class="wow fadeInLeft" data-wow-delay="0.7s" src="{% static 'images/projects/pr_img_7.png' %}" alt="">
+                        <img class="wow fadeInLeft" data-wow-delay="0.5s" src="{% static 'images/projects/pr_img_8.png' %}" alt="">
+                    </a>
+                </div>
+                <div class="col-md-5">
+                    <div class="portfolio-content">
+                        <a href="https://proddly.com/" class="category">Web Design</a>
+                        <a href="https://proddly.com/">
+                            <h3>Proddly - Ecommerce specializes in Finding things quicker.
+                            </h3>
+                        </a>
+                        <a href="https://proddly.com/" class="post-text-btn mt-40" target="_blank">View full project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-80 row align-items-center portfolio-item portfolio-widget-3 portfolio-widget text-start wow fadeInUp"
+                data-wow-delay="0.2s">
+                <div class="col-md-7">
+                    <a href="https://imonitor.guardtrol.com/" class="project-img">
+                        <img class="wow fadeInLeft" data-wow-delay="0.7s" src="{% static 'images/projects/pr_img_1.png' %}" alt="">
+                        <img class="wow fadeInLeft" data-wow-delay="0.5s" src="{% static 'images/projects/pr_img_2.png' %}" alt="">
+                    </a>
+                </div>
+                <div class="col-md-5">
+                    <div class="portfolio-content">
+                        <a href="https://imonitor.guardtrol.com/" class="category">Web Application</a>
+                        <a href="https://imonitor.guardtrol.com/">
+                            <h3>Guardtrol - Online security monitoring  & management application</h3>
+                        </a>
+                        <a href="https://imonitor.guardtrol.com/" class="post-text-btn mt-40">View full project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-80 align-items-center portfolio-item portfolio-widget-3 inverted-widget wow fadeInUp"
+                data-wow-delay="0.3s">
+                <div class="col-md-7">
+                    <a href="https://teptimesheets.com/" class="project-img">
+                        <img class="wow fadeInLeft" data-wow-delay="0.7s" src="{% static 'images/projects/pr_img_5.png' %}" alt="">
+                        <img class="wow fadeInLeft" data-wow-delay="0.5s" src="{% static 'images/projects/pr_img_6.png' %}" alt="">
+                    </a>
+                </div>
+                <div class="col-md-5">
+                    <div class="portfolio-content">
+                        <a href="https://teptimesheets.com/" class="category">Timesheet</a>
+                        <a href="https://teptimesheets.com/">
+                            <h3>Timesheet Management - Timesheet is a staff performance sheet platform</h3>
+                        </a>
+                        <a href="https://teptimesheets.com/" class="post-text-btn mt-40">View full project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-80 row align-items-center portfolio-item portfolio-widget-3 portfolio-widget text-start wow fadeInUp"
+                data-wow-delay="0.4s">
+                <div class="col-md-7">
+                    <a href="https://mutualbuyer.com/" class="project-img">
+                        <img class="wow fadeInLeft" data-wow-delay="0.7s" src="{% static 'images/projects/pr_img_3.png' %}" alt="">
+                        <img class="wow fadeInLeft" data-wow-delay="0.5s" src="{% static 'images/projects/pr_img_4.png' %}" alt="">
+                    </a>
+                </div>
+                <div class="col-md-5">
+                    <div class="portfolio-content">
+                        <a href="https://mutualbuyer.com/" class="category">MutualBuyer</a>
+                        <a href="https://mutualbuyer.com/">
+                            <h3>MutualBuyer - MutualBuyer provides a proven and trusted platform for its partners.</h3>
+                        </a>
+                        <a href="https://mutualbuyer.com/" class="post-text-btn mt-40">View full project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-80">
+                
+            </div>
+        </div>
+    </section>
+
+
+    <section class="cta-area-nine text-center pt-145 pb-180 banner_animation_02">
+        <div class="container">
+            <div class="call-action-text layer" data-depth="-0.15">
+                <div class="round"></div>
+                <h2>Ready to discuss <br><span>your</span> project?</h2>
+                <a href="{% url 'contacts:new-message' %}" class="action-btn">COntact Us</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}
